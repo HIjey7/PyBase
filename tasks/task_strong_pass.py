@@ -16,7 +16,7 @@ def is_strong_password(password):
             has_digit = True
         if ch.isupper():
             has_upper = True
-    return True if len(password) >= 8 and has_digit and has_upper else False
+    return len(password) >= 8 and has_digit and has_upper
 
 print(is_strong_password("asdasd"))
 print(is_strong_password("Qwerty123"))
